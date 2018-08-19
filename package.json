@@ -1,6 +1,6 @@
 {
   "name": "react-all-of",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react multi consumer component. Cut back on that nesting insanity!",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -59,9 +59,18 @@
       "^.+\\.(t|j)sx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
     "rootDir": "src",
-    "snapshotSerializers": ["enzyme-to-json"],
+    "snapshotSerializers": [
+      "enzyme-to-json"
+    ],
     "setupTestFrameworkScriptFile": "<rootDir>setupTests.ts",
     "globals": {
       "ts-jest": {
