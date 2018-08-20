@@ -1,4 +1,4 @@
-// import Switch from "./Switch";
-//
-// export {Switch}
-// export default Switch
+import All from "./All";
+
+export {All}
+export default All;
