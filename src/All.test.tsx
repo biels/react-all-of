@@ -1,11 +1,11 @@
 import {render, shallow} from "enzyme";
 import * as renderer from 'react-test-renderer';
 import * as React from "react";
-import All from "./All";
 import {ComponentType} from "react";
 import SampleConsumer1 from "./__test__/SampleConsumer1";
 import SampleConsumer2 from "./__test__/SampleConsumer2";
 import ComplexSampleConsumer1 from "./__test__/ComplexSampleConsumer1";
+import {All} from "./All";
 
 describe('MultiConsumer', function () {
     it('works with 1 component that takes no props', function () {

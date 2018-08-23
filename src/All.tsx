@@ -1,5 +1,5 @@
 import React, {Component, ComponentType} from 'react';
-import * as _ from "lodash";
+import _ from "lodash";
 
 type ComponentTypeWithProps<P = any> = [ComponentType<P>, P]
 
@@ -9,7 +9,7 @@ export interface AllProps {
     children: Function
 }
 
-class All extends Component<AllProps> {
+export class All extends Component<AllProps> {
 
     render() {
         const tree: Function = _.reduce(this.props.of, (accumulator: Function, value, index, array) => {
@@ -32,5 +32,3 @@ class All extends Component<AllProps> {
         return tree()
     }
 }
-
-export default All;
